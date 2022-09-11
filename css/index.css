@@ -11,9 +11,12 @@ a {
     text-decoration: none;
 }
 
-main {
+.desktop_version {
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
+
 }
 
 /*----------------------Header---------------*/
@@ -23,7 +26,7 @@ main {
     top: 0;
     width: 100%;
     background: #282c34;
-    opacity: 0.90; 
+    opacity: 0.98; 
     z-index: 2;
 
 }
@@ -48,6 +51,7 @@ main {
     margin: 10px;
     top: -30px;
     word-wrap: break-word;
+    opacity: 1; 
 }
 
 .container_contact {
@@ -143,6 +147,7 @@ main {
     margin-left: 20px;
     text-align: center;
     color: #61dafb;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 /*---------------------------------------*/
@@ -160,6 +165,7 @@ main {
     border-top: 2px solid #61DAFB;
     background: linear-gradient(
         0deg,
+        rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     );
