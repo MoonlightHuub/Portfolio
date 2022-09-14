@@ -54,9 +54,10 @@ body {
 
 .title_responsive {
     margin: auto;
-    font-size: 2em;
+    font-size: 1.5em;
     position: relative;
-    top: -35px;
+    top: -12px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .title_responsive a {
@@ -75,7 +76,7 @@ body {
     z-index: 3;
     background-color: #282c34;
     height: 100vh;
-    width: 350px;
+    width: 280px;
     margin-left: -353px;
     position: absolute;
     display: flex;
@@ -90,7 +91,7 @@ body {
 }
 
 .contact_slide {
-    width: 350px;
+    width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,9 +117,13 @@ body {
 
 }
 
+.contact_slide a:active {
+    color: #fff;
+}
+
 .btn_out_slide {
     position: relative;
-    top: -20px;
+    top: -30px;
     left: 20px;
     font-size: 70px;
     height: 70px;
@@ -132,8 +137,142 @@ body {
 
 .presentation_responsive {
     position: relative;
+    height: 680px;
+    width: 100%;
     top: 70px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../content/images/space.jpg);
+
+
+}
+
+.presentation_responsive span {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 17ch;
+    animation: typing 2.5s steps(12), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {width: 0}
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.my_photo {
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    margin-top: 120px;
+
+}
+
+.typestyle_responsive{
+    margin-top: 40px;
+    font-size: 2em;
+    color: #fff;
 }
 
 
+
+
 /*-----------------------------------*/
+
+
+
+/*----------------Contenido_container-------------------*/
+
+.content_container_responsive {
+    position: relative;
+    top: 70px;
+    text-align: center;
+    padding: 10px;
+}
+
+.content_container_responsive h2 {
+    font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.content_container_responsive p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.content_container_responsive section {
+    padding-bottom: 20px;
+}
+
+
+
+/*----------------Contenido_skills-------------------*/
+
+.skills_responsive {
+    margin-bottom: 50px;
+}
+
+.skill_icons {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*-------------------------------*/
+
+
+
+/*----------------Projects---------------*/
+
+.projects_container {
+    width: 90%;
+    height: 1200px;
+    padding-top: 20px;
+}
+
+.box {
+    background-color: red;
+    width: 250px;
+    height: 150px;
+    margin: auto;
+}
+
+
+
+
+/*---------------------------------*/
+
+/*----------------Footer-----------------*/
+
+.responsive_footer_container {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    color: #fff;    
+    padding-top: .5px;
+    padding-bottom: .5px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    );
+    border-top: 2px solid #61dafb;
+}
+
+.icon_contact_responsive {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
